@@ -1,0 +1,29 @@
+make would use
+g++ -O2 -march=native -mtune=native  -I"/usr/include/R" -DNDEBUG   -I"/usr/lib64/R/library/Rcpp/include/"  -I"/usr/lib64/R/library/RcppEigen/include/"  -I"/usr/lib64/R/library/RcppEigen/include/unsupported"  -I"/usr/lib64/R/library/BH/include" -I"/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/include/src/"  -I"/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/include/"  -I"/usr/lib64/R/library/RcppParallel/include/"  -I"/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/rstan/include" -DEIGEN_NO_DEBUG  -DBOOST_DISABLE_ASSERTS  -DBOOST_PENDING_INTEGER_LOG2_HPP  -DSTAN_THREADS  -DBOOST_NO_AUTO_PTR  -include '/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/include/stan/math/prim/mat/fun/Eigen.hpp'  -D_REENTRANT -DRCPP_PARALLEL_USE_TBB=1   -I/usr/local/include    -O3 -march=native -mtune=native -fPIC -c file477c649f39c10.cpp -o file477c649f39c10.o
+if test  "zfile477c649f39c10.o" != "z"; then \
+  echo g++ -O2 -march=native -mtune=native  -shared -L"/usr/lib64/R/lib" -Wl,-z,relro  -o file477c649f39c10.so file477c649f39c10.o  '/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/rstan/lib//libStanServices.a' -L'/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/lib/' -lStanHeaders -L'/usr/lib64/R/library/RcppParallel/lib/' -ltbb  -L"/usr/lib64/R/lib" -lR; \
+  g++ -O2 -march=native -mtune=native  -shared -L"/usr/lib64/R/lib" -Wl,-z,relro  -o file477c649f39c10.so file477c649f39c10.o  '/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/rstan/lib//libStanServices.a' -L'/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/lib/' -lStanHeaders -L'/usr/lib64/R/library/RcppParallel/lib/' -ltbb  -L"/usr/lib64/R/lib" -lR; \
+fi
+Error in compileCode(f, code, language = language, verbose = verbose) :
+  /home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/include/src/stan/model/model_base_crtp.hpp:153:29:   required from ‘stan::math::var stan::model::model_base_crtp<M>::log_prob(std::vector<stan::math::var>&, std::vector<int>&, std::ostream*) const [with M = model477c64e08a574_CIpvBI_Thall_stan_namespace::model477c64e08a574_CIpvBI_Thall_stan; std::ostream = std::basic_ostream<char>]’file477c649f39c10.cpp:796:1:   required from here/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/include/stan/math/prim/scal/err/check_less_or_equal.hpp:65:30: error: incomplete type ‘stan::is_vector_like<stan::math::var>’ used in nested name specifier       function, name, y, high);                              ^make: *** [file477c649f39c10.o] Error 1
+Error in sink(type = "output") : invalid connection
+
+##################################
+make cmd is
+  make -f '/usr/lib64/R/etc/Makeconf' -f '/usr/share/R/make/shlib.mk' -f '/home/yuf31/.R/Makevars' CXX='$(CXX14) $(CXX14STD)' CXXFLAGS='$(CXX14FLAGS)' CXXPICFLAGS='$(CXX14PICFLAGS)' SHLIB_LDFLAGS='$(SHLIB_CXX14LDFLAGS)' SHLIB_LD='$(SHLIB_CXX14LD)' SHLIB='file477c667bbcff3.so' OBJECTS='file477c667bbcff3.o'
+
+make would use
+g++ -std=c++11 '-std=c++11' -I"/usr/include/R" -DNDEBUG   -I"/usr/lib64/R/library/Rcpp/include/"  -I"/usr/lib64/R/library/RcppEigen/include/"  -I"/usr/lib64/R/library/RcppEigen/include/unsupported"  -I"/usr/lib64/R/library/BH/include" -I"/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/include/src/"  -I"/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/include/"  -I"/usr/lib64/R/library/RcppParallel/include/"  -I"/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/rstan/include" -DEIGEN_NO_DEBUG  -DBOOST_DISABLE_ASSERTS  -DBOOST_PENDING_INTEGER_LOG2_HPP  -DSTAN_THREADS  -DBOOST_NO_AUTO_PTR  -include '/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/include/stan/math/prim/mat/fun/Eigen.hpp'  -D_REENTRANT -DRCPP_PARALLEL_USE_TBB=1   -I/usr/local/include    -O3 -march=native -mtune=native -fPIC -std=c++11 -c file477c667bbcff3.cpp -o file477c667bbcff3.o
+if test  "zfile477c667bbcff3.o" != "z"; then \
+  echo g++ -std=c++11 '-std=c++11' -shared -L"/usr/lib64/R/lib" -Wl,-z,relro  -o file477c667bbcff3.so file477c667bbcff3.o  '/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/rstan/lib//libStanServices.a' -L'/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/lib/' -lStanHeaders -L'/usr/lib64/R/library/RcppParallel/lib/' -ltbb  -L"/usr/lib64/R/lib" -lR; \
+  g++ -std=c++11 '-std=c++11' -shared -L"/usr/lib64/R/lib" -Wl,-z,relro  -o file477c667bbcff3.so file477c667bbcff3.o  '/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/rstan/lib//libStanServices.a' -L'/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/lib/' -lStanHeaders -L'/usr/lib64/R/library/RcppParallel/lib/' -ltbb  -L"/usr/lib64/R/lib" -lR; \
+fi
+Error in compileCode(f, code, language = language, verbose = verbose) :
+          ^/home/yuf31/R/x86_64-redhat-linux-gnu-library/3.6/StanHeaders/include/stan/math/prim/mat/fun/accumulator.hpp:98:8: note:   template argument deduction/substitution failed:file477c667bbcff3.cpp:183:9: note:   ‘stan::math::var’ is not derived from ‘const std::vector<_RealType>’         lp_accum__.add(lp__);         ^make: *** [file477c667bbcff3.o] Error 1
+Error in sink(type = "output") : invalid connection
+
+
+
+
+
+

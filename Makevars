@@ -1,0 +1,4 @@
+
+CXX14FLAGS=-O3 -march=native -mtune=native -fPIC
+CXX14=g++
+CXX14=$(BINPREF)g++ -O2 -march=native -mtune=native
